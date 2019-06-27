@@ -1,0 +1,16 @@
+page-total {
+    .home{
+        background-image: url(../../assets/imgs/img.jpg);
+        background-size: cover;
+    }
+   
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+}

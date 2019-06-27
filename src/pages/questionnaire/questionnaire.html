@@ -1,0 +1,29 @@
+
+<ion-header>
+  <ion-navbar color="custom">
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home">
+  <div class="container">
+    <div class="quest">
+        <ion-card *ngFor="let n of Questions">
+    
+            <ion-card-header class="quest">
+                <h3 style="text-align: center"><strong>{{n.question}}</strong></h3>
+            </ion-card-header>
+       
+          <ion-card-content *ngFor="let b of n.options">
+            <button  ion-button full (click)="getAns(b.option)" class="btn btn-warning"id="1"> {{b.option}} </button>
+          </ion-card-content>
+        </ion-card>
+    </div>
+    <div>
+      <button ion-button full round (click)="showTotal()"  >Submit</button>
+    </div>
+    
+  </div>
+        
+</ion-content>
+

@@ -1,0 +1,59 @@
+page-questionnaire {
+    .home{
+        background-image: url(../../assets/imgs/img.jpg);
+        background-size: cover;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+        .flex-container> div{
+            justify-content: center;
+            align-items: center;
+            padding: .0.5em 1em .3em 0;
+            font-size: 30px;
+            margin: 20px;
+            text-align: center;
+        }
+
+    }
+     
+    //  button:active{
+    //     background:rgb(128, 128, 0);
+    //  }
+    //  button:focus{
+    //     background:olive;
+    //  }
+    //  .hide{
+    //      display: none;
+    //  }
+    //  .unhide {
+    //      display: block;
+    //  }
+    
+    button{
+        background-color:yellow;
+       }
+       
+       button:hover{background-color:orange;}
+       
+       button:focus{background-color: olive;}
+       
+       a {
+        color: orange;
+       }
+       
+       a.button{
+        color:green;
+        text-decoration: none;
+       }
+       
+       a:visited {
+        color: purple;
+       }
+       
+       a:active {
+        color: blue;
+       }
+}   

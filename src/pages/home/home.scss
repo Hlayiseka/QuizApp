@@ -1,0 +1,45 @@
+page-home {
+
+    ion-content {
+        background-image: url('../../assets/imgs/img.jpg');
+        background-size: cover;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+        .flex-container> div{
+            justify-content: center;
+            padding: .0.5em 1em .3em 0;
+            font-size: 30px;
+            margin: 20px;
+            text-align: center;
+        }
+    }
+    .box-1{
+        flex: 1;
+        height: 150px;
+        background-color: #f3fdff;
+        margin: auto;
+        text-align: center;
+
+        .paragraph{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 18vh;
+            color: black;
+        }
+    }
+    .item{
+        background-color: skyblue;
+        
+    }
+
+  
+
+ 
+}
