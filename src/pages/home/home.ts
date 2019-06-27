@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {QuestionnairePage} from '../questionnaire/questionnaire'
-import {Category} from '../../app/model/math/math.module';
+import {Category} from '../../app/model/math/math.model';
 import { QuizDataProvider } from '../../providers/quiz-data/quiz-data';
 
 @Component({
@@ -181,9 +181,9 @@ options: [
     },
     {question: 'What is DJ Black Coffee real name?',
     options: [
-      {option: 'Nkosinathi Innocent Maphumulo' },
+      {option: 'Nkosinathi Maphumulo' },
       {option: 'Thato Sikwane'},
-      {option: 'Oscar Bonginkosi Mdlongwa'}
+      {option: 'Bonginkosi Mdlongwa'}
       
     ]
     
@@ -199,7 +199,7 @@ options: [
 },
 {question: 'Who won the 2015 SAMA for Record of the Year?',
 options: [
-  {option: 'K.O ft. KiD X-Caracara' },
+  {option: 'K.O X-Caracara' },
   {option: 'Black-Fortune Teller'},
   {option: 'AKA-All eyes on Me'}
   
@@ -212,9 +212,9 @@ options: [
     questions: [
       {question: 'How far away is the sun?',
       options: [
-        {option: '94 million miles away from the earth' },
-        {option: '97 million miles away from the earth'},
-        {option: '93 million miles away from the earth'}
+        {option: '94 million miles' },
+        {option: '97 million miles'},
+        {option: '93 million miles'}
         
       ]
       
@@ -262,7 +262,7 @@ options: [
   constructor(public navCtrl: NavController, private quizdata: QuizDataProvider) {
 
   }
-  goToQuestionsPAge(value, Qs) {
+  goToQuestionnairePage(value, Qs) {
     this.quizdata.setData(Qs)
     this.navCtrl.push(QuestionnairePage, value);
   }
